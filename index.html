@@ -5,7 +5,24 @@
   <meta name="description"
         content="ROASGPTVI: robotic assembly task assisted by GPT-4 vision">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ROASGPTVI: robotic assembly task assisted by GPT-4 vision</title>
+  <title>D-RMGPT: Robot-assisted collaborative tasks driven by large multimodal models</title>
+  <style>
+    .spaced-image-left {
+        padding-left: 10px; /* Adjust the value as needed */
+    }
+    .spaced-image-right {
+        padding-right: 10px; /* Adjust the value as needed */
+    }
+    .carousel-image2 {
+      height: 600px; /* Adjust the value as needed */
+    }
+    .carousel-image3 {
+      height: 400px; /* Adjust the value as needed */
+    }
+    .carousel-image6 {
+      height: 500px; /* Adjust the value as needed */
+    }
+  </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -31,7 +48,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/icon.jpg">
+  <link rel="icon" href="./static/images/icona_univpm.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/all.min.js"></script>
@@ -88,11 +105,15 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ROASGPTVI: robotic assembly task assisted by GPT-4 vision</h1>
+          <h1 class="title is-1 publication-title">D-RMGPT: Robot-assisted collaborative tasks driven by large multimodal models</h1>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=eUi4eGQAAAAJ&hl=en">Matteo Forlini</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Z0dK3x0AAAAJ&hl=en">Mihail Babcinschi</a>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=i9DtMJwAAAAJ&hl=en">Giacomo Palmieri</a>,</span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=UnkrpWIAAAAJ&hl=en">Pedro Neto</a>,</span>            
           </div>
@@ -100,8 +121,8 @@
           <!-- write Cornell Univerity in red next line -->
           <br>
           <!-- <hr style="height:0px; visibility:hidden;" /> -->
-          <img src="./static/images/uc_logo.png" width="40%"></img>
-          <img src="./static/images/LOGO_UNIVPM.gif" width="40%"></img>
+          <img src="./static/images/uc_logo.png" width="40%" class="spaced-image-right"></img>
+          <img src="./static/images/LOGO_UNIVPM.gif" width="40%" class="spaced-image-left"></img>
           <!-- <div class="is-size-3 publication-authors">
             <span class="author-block">Cornell University</span>
           </div> -->
@@ -128,16 +149,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- twitter Link. -->
-              <span class="link-block">
-                <a href="https://twitter.com/sanjibac/status/1764670269526847517"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-x-twitter"></i>
-                  </span>
-                  <span>Summary</span>
-                </a>
-              </span>
             </div>
 
           </div>
@@ -159,8 +170,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-3" >
-            MOSAIC combines large pre-trained models for general tasks with task-specific modules for collaborative cooking
-          </h1>
+            Detection-Robot Management GPT (D-RMGPT), a robot-assisted assembly planner based on Large Multimodal Models (LMM) for a generic assembly task.
           <br>
           <div class="publication-video">
               <!-- add a link to youtube video using iframe -->
@@ -176,73 +186,22 @@
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body" has-text-centered>
-    <div class="container" >
-      <div class="column has-text-centered">
-        <h2 class="title is-3">MOSAIC enables flexibility, recoverability, and safety</h2>
-        <br>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/recoverability.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/safety.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/flexibility.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
 
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/recoverability.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/safety.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/flexibility.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <br>
-      
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Dataset -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Interactive Robot Skills</h2>
+        <h2 class="title is-8">D-RMGPT: System Overview</h2>
         <!-- <div class="publication-video"> -->
-          
-          
-          <img src="./static/images/skills.png">
+          <img src="./static/images/fig1.jpg" width="100%">
           <br>
           <br>
-          <p style="text-align: left;">
-            We evaluate MOSAIC on multiple recipes, involving a range of robot skills that interact with the human user and everyday objects.
-          </p>
+          <li style="text-align: left;"> <b>DetGPT-V</b>: Taking as input an image of the component list and two captured RGB frames of the scene, detects the components already assembled on the workbench. </li>
+          <li style="text-align: left;"> <b>R-ManGPT</b>: Based on the components detected and having in memory the components already brought by the robot (but maybe not installed by the operator), decides which is the next component to be assembled and plan the robot movements to bring it to the operator.</li>
+
+          
             
         <!-- </div> -->
       </div>
@@ -251,157 +210,137 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">System Overview</h2>
+        <h2 class="title is-8">D-RMGPT tests and evaluations</h2>
         <!-- <div class="publication-video"> -->
           <!-- align left -->
-          <img src="./static/images/system.png">
+          <img src="./static/images/fig4.jpg">
           <br>
           <br>
           <!-- write three bullet points next using <ul> -->
 
-          <li style="text-align: left;"> <b>Interactive Task Planner</b>: Communicates with the user via natural language to decide on a recipe, delegate subtasks, 
-            and monitors recipe progress. </li>
-          <li style="text-align: left;"> <b>Human Motion Forecasting</b>: Extracts and 
-            converts the human's 2D post to 3D coordinates, which it uses to 
-            predict future human motion. </li>
-          <li style="text-align: left;"> <b>Visuomotor Skill</b>: Produces a 3D grasp pose given image and language input, 
-            then outputs action conditioned on the grasp pose and 
-            predicted human motion.
-
+          <p style="text-align: left;">
+            D-RMGPT has been evaluated with different operators experience levels: .
+          </p>
+          <li style="text-align: left;"> <b>Inexperienced Operators</b>: 12 tests with 12 different operators who managed to assembly the product for the first time assisted by D-RMGPT. </li>
+          <li style="text-align: left;"> <b>Experienced Operators</b>: 3 tests with skilled operators who change the assembly sequence suggested by D-RMGPT, demonstrating its flexebility and recoverability </li>
+          <li style="text-align: left;"> <b>Inexperienced Operators Manual Assembly Process</b>: 10 different operators first assembled the product following a classical approach, reading the assembly instructions provided by the manufacturer. The time required following that procedure has been compared with that required with the assisted approach.
           
-
-          <!-- <p style="text-align: left;">
-            The <em>Interactive Task Planner</em> module communicates with the user via natural language to decide on a recipe. 
-            It assigns subtasks to each robot accordingly. The <em>Human Motion Forecasting</em> extracts and converts the 
-            human's 2D post to 3D coordinates, which it uses to predict future human 
-            motion. Simultaneously, a VLM takes image and language as input and 
-            produces a 3D grasp pose around the object of interest. Combined, all 
-            three are taken by the execution policy of the 
-            <em>Visuomotor Skill</em> module to produce a final robot action. 
-          </p>  -->
-            
-        <!-- </div> -->
       </div>
     </div>
     <br>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Interactive Task Planning</h2>
+        <h2 class="title is-3">Assembly Process Examples</h2>
+
+          <img src="./static/images/fig55.svg">
+          <p style="text-align: left;">
+            Assembly process followed by an inexperienced operator.
+          </p>
+          <br>
+          <br>
+          <img src="./static/images/fig5.svg">
+          <p style="text-align: left;">
+            Assembly process followed by an experienced operator.
+          </p>
+          <br>
+          <br>
+          <img src="./static/images/fig555.svg">
+          <p style="text-align: left;">
+            Example of failure of the system due to an incorrect detection.
+          </p>
+          <br>
+          <br>
+            
+        <!-- </div> -->
+      </div>
+    </div>
+    <br>
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">D-MRGPT Performances</h2>
         <!-- <div class="publication-video"> -->
           <!-- align left -->
-          
-          
-          
-          <img src="./static/images/tp_demo.gif">
+          <p style="text-align: left;">
+            <b>Test results inexperienced operator.</b> 
+            In the 12 tests conducted with inexperienced operators, 10 were able to successfully complete the assembly, while 2 resulted in assembly failure due to a detection failure, achieving a success rate of <b>83%</b>. 
+            For each test, the final completion time of the assembly, the average time required by the framework to suggest the next component for the operator to install, 
+            and any false positives and negatives detected in the detection process are reported.
+          </p>          
+          <img src="./static/images/tabella_result_inexperienced.png">
           <br>
           <br>
           <p style="text-align: left;">
-            <b> Embedding LLMs within a behavior tree. </b> LLMs can handle users natural language input, but its output can be error-prone and unconstrained. MOSAIC overcomes this challenges by embedding LLMs within a behavior tree. Each tree node partitions the LLM reasoning process, thereby reducing the complexity and potential error rate.
+            <b>Test results experienced operator.</b> 
+            Three tests were conducted with experienced operators, who altered the assembly sequence differently each time to demonstrate the system's flexibility and ability to recover from unplanned situations. 
+            In all three tests, the operator successfully completed the assembly.
           </p>
-            
-        <!-- </div> -->
-      </div>
-    </div>
-    <br>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Human Motion Forecasting</h2>
-        <!-- <div class="publication-video"> -->
-          <!-- align left -->
-          
-          
-          
-          <!-- <img src="./static/images/hmf.png"> -->
-          <img src="./static/images/HMF_video.gif"
+          <img src="./static/images/tabella_result_experienced.png">
           <br>
           <br>
           <p style="text-align: left;">
-            <b>Real-time Forecasting and Planning.</b> 
-            Given an RGB-D scene image, a pose detector extracts the human's 2D pose, which is converted to 3D coordinates using the camera's depth map. The motion forecaster predicts future human motion, which is used by the robot to plan actions.
+            <b>Detector comaparison with other VLM-based object detector systems.</b> 
+            A comparison in terms of Precision and Recall metrics has been conducted between the DetGPT-V module and two other state-of-the-art object detectors for VLM-based object detection systems.
           </p>
-            
+          <img src="./static/images/comparison.png">
         <!-- </div> -->
-      </div>
     </div>
-    <br>
+  </div>
 
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Visuomotor Skills</h2>
-        <!-- <div class="publication-video"> -->
-          <!-- align left -->
-          
-          <h3 class="title is-5">Interactive Demo: Ask the robot to pick an object of your choice </h2>
-          <div id="interactive-section">
-            <!-- change background-color to blue, red, yellow -->
-            <button id="gif1-button" class="button-salt">Pick Salt</button>
-            <button id="gif2-button" class="button-pepper">Pick Pepper</button>
-            <button id="gif3-button" class="button-relish">Pick Relish</button>
-            <br> <br>
-            <img id="gif-display" src="static/images/vs_approach/pepper.gif" alt="GIF will display here">
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Assembly Performances Improvements thanks to D-RMGPT</h2>
+      <!-- <div class="publication-video"> -->
+        <!-- align left -->
+        <p style="text-align: left;">
+          As a final result, a comparison is provided between the time required by inexperienced operators who have never seen the product before and assemble it using the D-RMGPT framework, 
+          and other operators with the same knowledge level (no prior knowledge) who assemble the aircraft in a traditional manner, following the instruction manual provided by the manufacturer.
+          20 different operator testers have been involved: 10 for D-RMGPT assisted assembly and 10 for manual assembly.
+        </p>
+        <br>
+        <p style="text-align: left;">
+          The average time in case with D-RMGPT is equal to <b>310.8 s</b> and it is <b>33.4% lower</b> than the average time required with a manual assembly approach equal to 466.8 s.
+          From the standard deviation is clear visible that the right case has less variations in time required.
+        </p> 
+        <br>         
+        <img src="./static/images/fig7.jpg">
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body" has-text-centered>
+    <div class="container">
+      <div class="column has-text-centered">
+        <h2 class="title is-2">Prompts used</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-shivfba">
+            <img src="./static/images/fig2.jpg">
           </div>
-          
-          <script>
-            document.getElementById('gif1-button').addEventListener('click', function() {
-            document.getElementById('gif-display').src = 'static/images/vs_approach/salt.gif';
-          });
-
-          document.getElementById('gif2-button').addEventListener('click', function() {
-            document.getElementById('gif-display').src = 'static/images/vs_approach/pepper.gif';
-          });
-
-          document.getElementById('gif3-button').addEventListener('click', function() {
-            document.getElementById('gif-display').src = 'static/images/vs_approach/relish.gif';
-          });
-          </script>
-          <!-- <img src="./static/images/vs_approach_pic.png"> -->
-          <br>
-          <br>
-          <p style="text-align: left;">
-            <b>VLMs for perception and RL for action prediction.</b> 
-            At train time, we design a simulator that mimics the real environment. Given the goal position, an RL agent is trained to predict actions under a reward function that enforces environment constraints.
-<br> <br> At inference time, taking an image and natural language as input, the visuomotor module uses OWL-ViT to output a bounding box around the object of interest. This bounding box is passed into FastSAM, which segments out the object and back-projects it onto a point cloud to produce a 3D goal pose. This 3D goal pose is used by the trained RL agent to produce the final actions.
-          </p>
-
-          
-          <!-- Create an interactive section below with three
-             buttons corresponding to playing of one of three gifs -->
-          
-          
-        <!-- </div> -->
+          <div class="item item-chafvir-tp">
+            <img src="./static/images/fig3.jpg" >
+          </div>
+          <div class="item item-">
+            <img src="./static/images/fig6.jpg" >
+          </div>
+          <div class="item item-shiba">
+            <img src="./static/images/fig2.jpg">
+          </div>
+          <div class="item item-stevè+e">
+            <img src="./static/images/fig3.jpg">
+          </div>
+          <div class="item item-chaivfr-tp">
+            <img src="./static/images/fig6.jpg">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">End-to-End Evaluation</h2>
-        <!-- <div class="publication-video"> -->
-          <!-- align left -->
-          
-          
-          
-          <!-- <img src="./static/images/hmf.png"> -->
-          <img src="./static/images/e2e_result.png">
-          <br>
-          <br>
-          <p style="text-align: left;">
-            <b>End-to-end results.</b> 
-            We test our end-to-end system on 6 recipes, where each recipe is tested through 10 trials. 
-            Each recipe contains various subtasks involving different robot skills. 
-            We report the number of trials that are completed without any errors and the 
-            individual subtask completion rate. MOSAIC is able to complete 41/60 tasks with an average subtask completion rate 
-            of 91.6%. As each module has sub-modules, each with a clear 
-            input/output contract, localizing an error is easily automated. 
-            We use this to cluster failures into the 5 clear categories.
-          </p>
-            
-        <!-- </div> -->
-      </div>
-    </div>
-    
-
-    <!-- <br> -->
   </div>
 </section>
 
