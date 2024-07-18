@@ -13,15 +13,15 @@
     .spaced-image-right {
         padding-right: 10px; /* Adjust the value as needed */
     }
-    .carousel-image2 {
-      height: 600px; /* Adjust the value as needed */
+    .image-width {
+      width: 1500px; /* Adjust the value as needed */
     }
-    .carousel-image3 {
-      height: 400px; /* Adjust the value as needed */
-    }
-    .carousel-image6 {
-      height: 500px; /* Adjust the value as needed */
-    }
+    .author-block {
+            color: black;
+        }
+        .author-block a {
+            color: red; /* or whatever color you want for the link */
+        }
   </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -113,16 +113,18 @@
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=Z0dK3x0AAAAJ&hl=en">Mihail Babcinschi</a>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=i9DtMJwAAAAJ&hl=en">Giacomo Palmieri</a>,</span>
+              <a href="https://scholar.google.com/citations?user=i9DtMJwAAAAJ&hl=en">Giacomo Palmieri</a><span>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=UnkrpWIAAAAJ&hl=en">Pedro Neto</a>,</span>            
+              <a href="https://scholar.google.com/citations?user=UnkrpWIAAAAJ&hl=en">Pedro Neto</a>        
           </div>
-
-          <!-- write Cornell Univerity in red next line -->
           <br>
           <!-- <hr style="height:0px; visibility:hidden;" /> -->
-          <img src="./static/images/uc_logo.png" width="40%" class="spaced-image-right"></img>
-          <img src="./static/images/LOGO_UNIVPM.gif" width="40%" class="spaced-image-left"></img>
+        <a href="http://www2.dem.uc.pt/pedro.neto/index.htm" target="_blank">
+            <img src="./static/images/uc_logo.png" width="40%" class="spaced-image-right" alt="UC Logo">
+        </a>
+        <a href="https://diism.univpm.it/en/mechanics-applied-to-machines/" target="_blank">
+            <img src="./static/images/LOGO_UNIVPM.gif" width="40%" class="spaced-image-left" alt="UNIVPM Logo">
+        </a>
           <!-- <div class="is-size-3 publication-authors">
             <span class="author-block">Cornell University</span>
           </div> -->
@@ -147,6 +149,15 @@
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/matteoforlini/D-RMGPT"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
                 </a>
               </span>
             </div>
@@ -195,7 +206,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-8">D-RMGPT: System Overview</h2>
         <!-- <div class="publication-video"> -->
-          <img src="./static/images/fig1.jpg" width="100%">
+          <img src="./static/images/fig1.jpg" class="image-width">
           <br>
           <br>
           <li style="text-align: left;"> <b>DetGPT-V</b>: Taking as input an image of the component list and two captured RGB frames of the scene, detects the components already assembled on the workbench. </li>
@@ -210,7 +221,7 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-8">D-RMGPT tests and evaluations</h2>
+        <h2 class="title is-8">D-RMGPT Tests and Evaluations</h2>
         <!-- <div class="publication-video"> -->
           <!-- align left -->
           <img src="./static/images/fig4.jpg">
