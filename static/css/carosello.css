@@ -1,0 +1,71 @@
+/* Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Track and Items */
+  .carousel-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  .carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Navigation Buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .carousel-item img {
+      max-height: 250px;
+    }
+  }
+  
