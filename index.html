@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ROASGPTVI: robotic assembly task assisted by GPT-4 vision">
+        content="D-RMGPT">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>D-RMGPT: Robot-assisted collaborative tasks driven by large multimodal models</title>
   <style>
@@ -49,12 +49,15 @@
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/icona_univpm.png">
+  <link rel="stylesheet" href="./static/css/carosello.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script src="./static/js/carosello.js"></script>
 </head>
 <body>
 
@@ -173,21 +176,68 @@
 
 
 
-<!-- Display a big video next -->
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Dataset -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-normal">
+        <h2 class="title is-8">D-RMGPT: System Overview</h2>
+        <!-- <div class="publication-video"> -->
+          <p style="text-align: left;">Detection-Robot Management
+            GPT (D-RMGPT): an adaptable robot-assisted planner based
+            on embedded knowledge of off-the-shelf GPT-4 and GPT-
+            4Vision (now substituted with GPT-4o). This system is designed to assist inexperienced
+            operators in human-robot collaborative tasks without
+            requiring any markers or prior local training.</p>
+          <br>
+          <img src="./article finished/fig0.jpg" class="image-width">
+          <br>
+          <li style="text-align: left;"> <b>DetGPT-V</b>: perceives the environment 
+            through one-shot analysis of prompted images from the
+            current scenario, identifying the surrounding objects, human
+            actions (e.g., pointing and tasks) and interpreting human
+            voice commands. </li>
+          <li style="text-align: left;"> <b>R-ManGPT</b>: acts as operations and robot task manager, planning
+            the next actions, such as identifying feasible components for
+            assembly or selecting ingredients to deliver, and generating
+            discrete robot actions.</li>
+          
+            
+        <!-- </div> -->
+      </div>
+    </div>
+    <br>
+
+
+    <!-- Display a big video next -->
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <div class="publication-video">
-              <!-- add a link to youtube video using iframe -->
-
-              <!-- <video poster="" id="shiba" controls playsinline> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2X-SMHGMimk?si=qd0G8mOx_AfyJzkS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <!-- <iframe width="420" height="240" src="https://www.youtube.com/embed/jKp-RqNlW90?si=I23I9oWz2yOCACWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                <!-- <source src="./static/videos/e2e.mp4" type="video/mp4"> -->
-              <!-- </video>  -->
+          <h2 class="title is-8">One Framework, Multiple Scenarios, Versatility Ensured</h2>
+          <div class="columns is-multiline is-centered">
+            <!-- Primo video -->
+            <div class="column is-6">
+              <h2 class="title is-6">Product Assembly</h2>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/2X-SMHGMimk?si=qd0G8mOx_AfyJzkS" 
+                      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                      encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                      allowfullscreen></iframe>
+            </div>
+            <!-- Secondo video -->
+            <div class="column is-6">
+              <h2 class="title is-6">Food Preparation</h2>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/BSaT00cEHTY?si=2U3scYbgT8t5ouIH" 
+                      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                      encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                      allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -196,51 +246,35 @@
 </section>
 
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Dataset -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-8">D-RMGPT: System Overview</h2>
-        <!-- <div class="publication-video"> -->
-          <img src="./static/images/fig1.jpg" class="image-width">
-          <br>
-          <br>
-          <li style="text-align: left;"> <b>DetGPT-V</b>: Taking as input an image of the component list and two captured RGB frames of the scene, detects the components already assembled on the workbench. </li>
-          <li style="text-align: left;"> <b>R-ManGPT</b>: Based on the components detected and having in memory the components already brought by the robot (but maybe not installed by the operator), decides which is the next component to be assembled and plan the robot movements to bring it to the operator.</li>
-
-          
-            
-        <!-- </div> -->
-      </div>
-    </div>
-    <br>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-normal">
         <h2 class="title is-8">D-RMGPT Tests and Evaluations</h2>
-        <!-- <div class="publication-video"> -->
-          <!-- align left -->
-          <img src="./static/images/fig4.jpg">
-          <br>
-          <br>
-          <!-- write three bullet points next using <ul> -->
-
           <p style="text-align: left;">
-            D-RMGPT has been evaluated with different operators experience levels: .
+            D-RMGPT has been evaluated with 2 different human-robot collaboration scenarios: <b>Product Assembly</b> and <b>Food Preparation</b>.
           </p>
-          <li style="text-align: left;"> <b>Inexperienced Operators</b>: 12 tests with 12 different operators who managed to assembly the product for the first time assisted by D-RMGPT. </li>
-          <li style="text-align: left;"> <b>Experienced Operators</b>: 3 tests with skilled operators who change the assembly sequence suggested by D-RMGPT, demonstrating its flexebility and recoverability </li>
-          <li style="text-align: left;"> <b>Inexperienced Operators Manual Assembly Process</b>: 10 different operators first assembled the product following a classical approach, reading the assembly instructions provided by the manufacturer. The time required following that procedure has been compared with that required with the assisted approach.
-          
+          <br>
+          <h2 class="title is-4">Product Assembly</h2>
+            <p style="text-align: left;">The aircraft toy assembly scenario emphasizes the system's ability to detect highly specific and complex components within a scene using an appropriately tailored image prompt. 
+              A robust environment perception is a fundamental prerequisite for building any task-planning system.</p>
+            <img src="./static/images/fig4.jpg">
+            <li style="text-align: left;"> <b>Inexperienced Operators</b>: 12 tests with 12 different operators who managed to assembly the product for the first time assisted by D-RMGPT. </li>
+            <li style="text-align: left;"> <b>Experienced Operators</b>: 3 tests with skilled operators who change the assembly sequence suggested by D-RMGPT, demonstrating its flexebility and recoverability </li>
+            <li style="text-align: left;"> <b>Inexperienced Operators Manual Assembly Process</b>: 10 different operators first assembled the product following a classical approach, reading the assembly instructions provided by the manufacturer. The time required following that procedure has been compared with that required with the assisted approach.
+          <br>
+          <br>
+          <h2 class="title is-4 has-text-centered">Food Preparation</h2>
+            <p style="text-align: left;"> The food preparation scenario highlights the system's adaptability and its ability to suggest the correct robot action for any workflow, from simple to complex processes. Operators can personalize tasks using intuitive inputs like voice commands or images, ensuring seamless collaboration tailored to their preferences. </p>
+            <img src="./static/images/fig_pizza_process.png">
+            <li style="text-align: left;"> <b>Different Ingredients Combination</b>: 15 tests with 15 different topping ingredients combination, from 1 up to 4 toppings all together. </li>
+            <li style="text-align: left;"> <b>Experienced Operators</b>: 8 tests with skilled operators, who change the assembly sequence suggested by D-RMGPT. </li>
+            <br>
       </div>
     </div>
     <br>
 
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Assembly Process Examples</h2>
+      <div class="column is-normal">
+        <h2 class="title is-3"> Productc Assembly Process Examples</h2>
 
           <img src="./static/images/fig55.png">
           <p style="text-align: left;">
@@ -268,7 +302,7 @@
 
 
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-normal">
         <h2 class="title is-3">D-MRGPT Performances</h2>
         <!-- <div class="publication-video"> -->
           <!-- align left -->
@@ -294,18 +328,45 @@
             A comparison in terms of Precision and Recall metrics has been conducted between the DetGPT-V module and two other state-of-the-art object detectors for VLM-based object detection systems.
           </p>
           <img src="./static/images/comparison.png">
+          <br>
+          <br>
+          <p style="text-align: left;">
+            <b>Process Customization and Adaptive Robot Planning</b> 
+            The system was
+            demonstrated to be capable in assisting the operator in
+            producing a pizza from the chosen ingredients. The robot
+            percepts its surroundings through cameras and is then able to
+            assist the operator by providing the necessary tool/ingredient
+            or by taking the right action to anticipate/support the operator
+            in completing the task. A success rate of <b>86%</b> in completing the pizza preparation task is achieved. 
+          </p>
+          <img src="./static/images/tabella_result_pizza.png">
+          <br>
+          <br>
+          <p style="text-align: left;">
+            <b>Process Customization and Adaptive Robot Planning with Changed Order Sequence</b> 
+            8 tests have been performed where the operators did not follow the suggested
+            sequence of ingredient delivery, instead modifying the order
+            or using two ingredients simultaneously. For example, while
+            the robot delivered one ingredient, the operator would
+            retrieve a different one from the warehouse and proceed to
+            use it. The aim of these tests is to evaluate the framework’s
+            ability to adapt to operator decisions. Among the eight tests performed, only one resulted in
+            a failure. 
+          </p>
+          <img src="./static/images/tabella_result_pizza_experienced.png">
         <!-- </div> -->
     </div>
   </div>
 
 
   <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Assembly Performances Improvements thanks to D-RMGPT</h2>
+    <div class="column is-normal">
+      <h2 class="title is-3">Assembly Product Performances Improvements thanks to D-RMGPT</h2>
       <!-- <div class="publication-video"> -->
         <!-- align left -->
         <p style="text-align: left;">
-          As a final result, a comparison is provided between the time required by inexperienced operators who have never seen the product before and assemble it using the D-RMGPT framework, 
+          A comparison is provided between the time required by inexperienced operators who have never seen the aircraft product before and assemble it using the D-RMGPT framework, 
           and other operators with the same knowledge level (no prior knowledge) who assemble the aircraft in a traditional manner, following the instruction manual provided by the manufacturer.
           20 different operator testers have been involved: 10 for D-RMGPT assisted assembly and 10 for manual assembly.
         </p>
@@ -322,36 +383,6 @@
 
 
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body" has-text-centered>
-    <div class="container">
-      <div class="column has-text-centered">
-        <h2 class="title is-2">Prompts used</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-shivfba">
-            <img src="./static/images/fig2.jpg">
-          </div>
-          <div class="item item-chafvir-tp">
-            <img src="./static/images/fig3.jpg" >
-          </div>
-          <div class="item item-">
-            <img src="./static/images/fig6.jpg" >
-          </div>
-          <div class="item item-shiba">
-            <img src="./static/images/fig2.jpg">
-          </div>
-          <div class="item item-stevè+e">
-            <img src="./static/images/fig3.jpg">
-          </div>
-          <div class="item item-chaivfr-tp">
-            <img src="./static/images/fig6.jpg">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section class="section">
